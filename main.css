@@ -1,0 +1,211 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Comic Sans MS', monospace;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 900px;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1rem;
+}
+form,
+textarea {
+  font-size: 1rem;
+}
+input[type="date"]{
+  position: relative; width: 218px;
+  height: 60px;
+  padding: 20px;
+  border: 0;
+  background: linear-gradient(150deg, lightgoldenrodyellow);
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  font-weight: 350px;
+  letter-spacing: 3px;
+  color: #c83d3d;
+  text-transform: lowercase;
+  box-shadow: 0px 30px 38px -20px #000;
+  }
+button {
+  display: block;
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: rgb(133, 224, 42);
+  color: #092b91;
+  font-family: 'Segoe Fluent Icons', monospace;
+}
+header {
+  text-align: center;
+  margin: 1em auto;
+}
+.section {
+  padding: 1em 1em;
+  width: 100%;
+  margin: 1em auto;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 1em;
+}
+.container-row {
+  width: 90%;
+  margin: 0 auto;
+}
+.btn-main,
+.btn-light,
+.btn-dark {
+  display: block;
+  padding: 0.6rem 2rem;
+  margin: 1rem;
+  transition: all 0.1s;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn-main {
+  color: rgb(167, 167, 84);
+  background-color: rgb(215, 49, 49);
+}
+.btn-light {
+  color: #173eb5;
+  background-color: rgb(215, 140, 140);
+}
+.btn-dark {
+  color: rgb(186, 83, 83);
+  background-color: #2a50c4;
+}
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: rgb(212, 212, 49);
+  color: rgb(172, 52, 52);
+  font-weight: 700;
+  transform: scale(1.08);
+}
+.entry-text-title {
+  width: 20em;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 2px;
+  border: unset;
+  background-color: lightgoldenrodyellow;
+  border-radius: 10px;
+  font-family: 'Segoe Fluent Icons', monospace;
+  box-shadow: 0px 30px 38px -20px #000;
+}
+.entry-text-title:focus {
+  outline-color: rgb(206, 22, 22);
+  font-family: 'Segoe Fluent Icons', monospace;
+  color: rgb(210, 34, 34);
+  font-size: 1rem;
+}
+.entry-text-title::placeholder {
+  color: rgb(208, 36, 36);
+  font-family: 'Segoe Fluent Icons', monospace;
+  font-size: 1rem;
+}
+.entry-text-title::-ms-value {
+  color: rgb(196, 30, 30);
+  font-family: 'Segoe Fluent Icons', monospace;
+  font-size: 1rem;
+}
+.container-row-journal {
+  display: flex;
+  justify-content: center;
+}
+.entry-form {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.journal-label {
+  display: block;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.entry-text-box {
+  width: 100%;
+  height: 20em;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 2px;
+  border: unset;
+  background-color: lightgoldenrodyellow;
+  font-family: 'Segoe Fluent Icons', monospace;
+}
+@media (min-width: 769px) {
+  .entry-text-box {
+    width: 40em;
+    height: 20em;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 2px;
+    border: unset;
+    background-color: lightgoldenrodyellow;
+    font-family: 'Segoe Fluent Icons', monospace;
+  }
+}
+.entry-text-box:focus {
+  outline-color: rgb(198, 42, 42);
+  font-family: 'Segoe Fluent Icons', monospace;
+  color: rgb(168, 59, 59);
+  font-size: 1rem;
+}
+.entry-text-box::placeholder {
+  color: rgb(188, 48, 48);
+  font-family: 'Segoe Fluent Icons', monospace;
+  font-size: 1rem;
+}
+.entry-submit-btn {
+  margin: 0;
+}
+.sectionEntryResults {
+  width: 100%;
+  margin: 0 auto;
+}
+.entryResultRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.single-entry-div {
+  max-width: 100%;
+  margin: 1em auto;
+  padding: 1em 1em;
+}
+.single-entry-date {
+  background-color: rgb(108, 201, 207);
+  width: 100%;
+}
+.heading-results {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgb(104, 181, 206);
+}

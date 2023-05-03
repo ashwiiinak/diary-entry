@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="main.css" />
+    <title>Dear Diary App</title>
+  </head>
+  <body>
+    <header><h1 class="title"><u>Welcome to your Personal Space</u></h1></header>
+    <section class="section journal-section">
+      <div class="container">
+        <div class="container-row container-row-journal">
+          <div class="container-item container-item-journal">
+            <form id="entryForm" action="">
+              <label for="entry-title" class="journal-label"><h3>Oh what date is it today?</h3></label>
+              <input
+                type="date"
+              />
+              <label for="entry" class="journal-label"><h3>Hey, how was your day!!</h3></label>
+              <textarea
+                name="daily-entry"
+                id="entry"
+                class="entry-text-box"
+                placeholder="What's on your mind?"
+              ></textarea>
+              <button class="btn-main entry-submit-btn" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h3 style="text-align:center;"><i><u>Scroll down to check your Journal Entries</u></i></h3>
+    <section class="section sectionEntryResults" id="entryResultsSection">
+      <div class="container">
+        <div class="container-row entryResultRow"></div>
+      </div>
+    </section>
+    <script src="diary.js"></script>
+  </body>
+</html>
